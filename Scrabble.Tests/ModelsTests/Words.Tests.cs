@@ -16,7 +16,7 @@ public class ListTest
     // Act
     int result = newList.GetScore();
     // Assert
-    Assert.AreEqual(result, 5);
+    Assert.AreEqual(result, 1);
   }
 }
 }
