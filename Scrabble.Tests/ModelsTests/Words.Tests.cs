@@ -18,5 +18,28 @@ public class ListTest
     // Assert
     Assert.AreEqual(result, 3);
   }
+
+
+  [TestMethod]
+  public void GetScore2_Test()
+  {
+    //Arrange
+    List newList = new List("DA");
+    // Act
+    int result = newList.GetScore();
+    // Assert
+    Assert.AreEqual(result, 3);
+  }
+
+  [TestMethod]
+  public void GetUpperCase_Test()
+  {
+    //Arrange
+    List newList = new List("DaOpdR");
+    // Act
+    int result = newList.GetScore();
+    // Assert
+    Assert.AreEqual(result, 5);
+  }
 }
 }

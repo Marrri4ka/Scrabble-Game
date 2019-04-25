@@ -9,7 +9,8 @@ namespace WordsList.Models
 
     public List (string userWord)//constructor
     {
-      _userWord = userWord;
+      _userWord = userWord.ToUpper();
+      Console.WriteLine(_userWord);
     }
 
 
@@ -17,12 +18,18 @@ namespace WordsList.Models
     {
       int result = 0;
       string myString = "AEIOULNRST";
+      string mySecondString = "DG";
       char[] newArray = _userWord.ToCharArray();
       for (int i =0; i< newArray.Length; i++)
       {
         if(myString.Contains(newArray[i]))
         {
           result = result + 1;
+        }
+
+        else if (mySecondString.Contains(newArray[i]))
+        {
+          result = result +2;
         }
       }
 
