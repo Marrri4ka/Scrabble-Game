@@ -16,10 +16,11 @@ namespace WordsList.Models
     public int GetScore()
     {
       int result = 0;
+      string myString = "AEIOULNRST";
       char[] newArray = _userWord.ToCharArray();
       for (int i =0; i< newArray.Length; i++)
       {
-        if(newArray[i] == 'A')
+        if(myString.Contains(newArray[i]))
         {
           result = result + 1;
         }

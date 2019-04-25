@@ -12,11 +12,11 @@ public class ListTest
   public void GetScore_Test()
   {
     //Arrange
-    List newList = new List("A");
+    List newList = new List("AEI");
     // Act
     int result = newList.GetScore();
     // Assert
-    Assert.AreEqual(result, 1);
+    Assert.AreEqual(result, 3);
   }
 }
 }
