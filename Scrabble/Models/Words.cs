@@ -10,7 +10,7 @@ namespace WordsList.Models
     public List (string userWord)//constructor
     {
       _userWord = userWord.ToUpper();
-      Console.WriteLine(_userWord);
+    
     }
 
 
@@ -27,35 +27,35 @@ namespace WordsList.Models
       char[] newArray = _userWord.ToCharArray();
       for (int i =0; i< newArray.Length; i++)
       {
-        if(myString.Contains(newArray[i]))
+        if(myString.Contains(newArray[i].ToString()))
         {
           result = result + 1;
         }
 
-        else if (mySecondString.Contains(newArray[i]))
+        else if (mySecondString.Contains(newArray[i].ToString()))
         {
           result = result +2;
         }
 
-        else if (myThirdString.Contains(newArray[i]))
+        else if (myThirdString.Contains(newArray[i].ToString()))
         {
           result = result + 3;
         }
 
-        else if (myFourthString.Contains(newArray[i]))
+        else if (myFourthString.Contains(newArray[i].ToString()))
         {
           result = result + 4;
         }
 
-        else if (myFifthString.Contains(newArray[i]))
+        else if (myFifthString.Contains(newArray[i].ToString()))
         {
           result = result + 5;
         }
-        else if (mySixthString.Contains(newArray[i]))
+        else if (mySixthString.Contains(newArray[i].ToString()))
         {
           result = result + 8;
         }
-        else if (mySeventhString.Contains(newArray[i]))
+        else if (mySeventhString.Contains(newArray[i].ToString()))
         {
           result = result + 10;
         }

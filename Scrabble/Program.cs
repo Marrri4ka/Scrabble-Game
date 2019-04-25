@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-
 namespace WordsList.Models
 {
   public class Program
@@ -10,8 +9,8 @@ namespace WordsList.Models
       Console.WriteLine ("Please enter your word");
       string UserWord = Console.ReadLine();
       List newList = new List(UserWord);
-      int result = newList.GetScore();
-      Console.WriteLine ("Your result is" + result);
+      string result = newList.GetScore().ToString();
+      Console.WriteLine ("Your result is" + " " + result);
     }
   }
 }
