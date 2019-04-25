@@ -19,6 +19,11 @@ namespace WordsList.Models
       int result = 0;
       string myString = "AEIOULNRST";
       string mySecondString = "DG";
+      string myThirdString = "BCMP";
+      string myFourthString = "FHVWY";
+      string myFifthString = "K";
+      string mySixthString = "JX";
+      string mySeventhString = "QZ";
       char[] newArray = _userWord.ToCharArray();
       for (int i =0; i< newArray.Length; i++)
       {
@@ -30,6 +35,29 @@ namespace WordsList.Models
         else if (mySecondString.Contains(newArray[i]))
         {
           result = result +2;
+        }
+
+        else if (myThirdString.Contains(newArray[i]))
+        {
+          result = result + 3;
+        }
+
+        else if (myFourthString.Contains(newArray[i]))
+        {
+          result = result + 4;
+        }
+
+        else if (myFifthString.Contains(newArray[i]))
+        {
+          result = result + 5;
+        }
+        else if (mySixthString.Contains(newArray[i]))
+        {
+          result = result + 8;
+        }
+        else if (mySeventhString.Contains(newArray[i]))
+        {
+          result = result + 10;
         }
       }
 
